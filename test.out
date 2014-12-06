@@ -1,0 +1,180 @@
+/usr/bin/node src/index.js test/di_audio.xml
+Hi
+test/di_audio.xml
+DI_AUDIO_DelayOutput
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - delayMs:int
+   - {"$":{"id":"_86","name":"int","size":"32","align":"32"}}
+DI_AUDIO_Stop
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+DI_AUDIO_SetEventTimeOut
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - timeout:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+DI_AUDIO_Flush
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+DI_AUDIO_SetStereo
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - dualMode:DI_AUDIO_STEREO_MODE
+   - {"$":{"id":"_148","name":"DI_AUDIO_STEREO_MODE","context":"_1","location":"f1:69","file":"f1","line":"69","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_DUAL_Stereo","init":"0"}},{"$":{"name":"DI_AUDIO_DUAL_LeftOnly","init":"1"}},{"$":{"name":"DI_AUDIO_DUAL_RightOnly","init":"2"}},{"$":{"name":"DI_AUDIO_DUAL_Mix","init":"3"}}]}
+DI_AUDIO_SetVolume
+ - eOutput:DI_AUDIO_OUTPUT
+   - {"$":{"id":"_200","name":"DI_AUDIO_OUTPUT","context":"_1","location":"f1:196","file":"f1","line":"196","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_OUTPUT_ALL","init":"0"}},{"$":{"name":"DI_AUDIO_OUTPUT_DAC","init":"1"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPDIF","init":"2"}},{"$":{"name":"DI_AUDIO_OUTPUT_HDMI","init":"4"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPEAKER","init":"8"}},{"$":{"name":"DI_AUDIO_OUTPUT_HP","init":"16"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_1","init":"32"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_2","init":"64"}},{"$":{"name":"DI_AUDIO_OUTPUT_I2S","init":"128"}}]}
+ - ucVolume:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+DI_AUDIO_SetMediaType
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - nType:DI_AUDIO_TYPE
+   - {"$":{"id":"_65","name":"DI_AUDIO_TYPE","context":"_1","location":"f1:32","file":"f1","line":"32","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIOTYPE_STREAM","init":"0"}},{"$":{"name":"DI_AUDIOTYPE_MEDIA","init":"1"}},{"$":{"name":"DI_AUDIOTYPE_PLAYBACK","init":"2"}},{"$":{"name":"DI_AUDIOTYOE_MAX","init":"3"}}]}
+DI_AUDIO_StopMemoryStream
+ - ulRequestId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+DI_AUDIO_GetOutputSampleRate
+ - eInput:DI_AUDIO_SAMPLE_RATE_e
+   - {"$":{"id":"_126","name":"DI_AUDIO_SAMPLE_RATE_e","context":"_1","location":"f1:258","file":"f1","line":"258","size":"32","align":"32"},"EnumValue":[{"$":{"name":"eDI_AUDIO_SR_32KHz","init":"1"}},{"$":{"name":"eDI_AUDIO_SR_44KHz","init":"2"}},{"$":{"name":"eDI_AUDIO_SR_48KHz","init":"4"}},{"$":{"name":"eDI_AUDIO_SR_88KHz","init":"8"}},{"$":{"name":"eDI_AUDIO_SR_96KHz","init":"16"}},{"$":{"name":"eDI_AUDIO_SR_176KHz","init":"32"}},{"$":{"name":"eDI_AUDIO_SR_192KHz","init":"64"}},{"$":{"name":"eDI_AUDIO_SR_MAX","init":"128"}}]}
+ - eOutput:DI_AUDIO_SAMPLE_RATE_e
+   - {"$":{"id":"_126","name":"DI_AUDIO_SAMPLE_RATE_e","context":"_1","location":"f1:258","file":"f1","line":"258","size":"32","align":"32"},"EnumValue":[{"$":{"name":"eDI_AUDIO_SR_32KHz","init":"1"}},{"$":{"name":"eDI_AUDIO_SR_44KHz","init":"2"}},{"$":{"name":"eDI_AUDIO_SR_48KHz","init":"4"}},{"$":{"name":"eDI_AUDIO_SR_88KHz","init":"8"}},{"$":{"name":"eDI_AUDIO_SR_96KHz","init":"16"}},{"$":{"name":"eDI_AUDIO_SR_176KHz","init":"32"}},{"$":{"name":"eDI_AUDIO_SR_192KHz","init":"64"}},{"$":{"name":"eDI_AUDIO_SR_MAX","init":"128"}}]}
+DI_AUDIO_Pause
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - pause:int
+   - {"$":{"id":"_86","name":"int","size":"32","align":"32"}}
+DI_AUDIO_GetStreamInfo
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - ptAudioStreamInfo:DI_AUDIO_STREAM_INFO_t
+   - {"$":{"id":"_66","name":"DI_AUDIO_FORMAT","context":"_1","location":"f1:61","file":"f1","line":"61","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDFORMAT_MPEG","init":"1"}},{"$":{"name":"DI_AUDFORMAT_MP3","init":"2"}},{"$":{"name":"DI_AUDFORMAT_AAC","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_ADTS","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_LOAS","init":"8"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_LOAS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_ADTS","init":"32"}},{"$":{"name":"DI_AUDFORMAT_AC3","init":"64"}},{"$":{"name":"DI_AUDFORMAT_AC3_PLUS","init":"128"}},{"$":{"name":"DI_AUDFORMAT_PCM","init":"256"}},{"$":{"name":"DI_AUDFORMAT_DTS","init":"512"}},{"$":{"name":"DI_AUDFORMAT_LPCM_HD_DVD","init":"1024"}},{"$":{"name":"DI_AUDFORMAT_LPCM_BLUERAY","init":"2048"}},{"$":{"name":"DI_AUDFORMAT_DTS_HD","init":"4096"}},{"$":{"name":"DI_AUDFORMAT_WMA_STD","init":"8192"}},{"$":{"name":"DI_AUDFORMAT_WMA_PRO","init":"16384"}},{"$":{"name":"DI_AUDFORMAT_LPCM_DVD","init":"32768"}},{"$":{"name":"DI_AUDFORMAT_PCMWAVE","init":"65536"}},{"$":{"name":"DI_AUDFORMAT_DRA","init":"131072"}},{"$":{"name":"DI_AUDFORMAT_FLAC","init":"262144"}},{"$":{"name":"DI_AUDFORMAT_ADPCM","init":"524288"}},{"$":{"name":"DI_AUDFORMAT_VORBIS","init":"1048576"}},{"$":{"name":"DI_AUDFORMAT_APE","init":"2097152"}},{"$":{"name":"DI_AUDFORMAT_NONE","init":"0"}}]}
+   - {"$":{"id":"_149","name":"DI_AUDIO_MODE","context":"_1","location":"f1:85","file":"f1","line":"85","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_MODE_UNKNOWN","init":"0"}},{"$":{"name":"DI_AUDIO_MODE_STEREO","init":"1"}},{"$":{"name":"DI_AUDIO_MODE_MUTI_STEREO","init":"2"}},{"$":{"name":"DI_AUDIO_MODE_MONO","init":"3"}},{"$":{"name":"DI_AUDIO_MODE_DUAL_MONO","init":"4"}}]}
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+   - {"$":{"id":"_237","name":"._7","artificial":"1","throw":"","context":"_4","access":"public","mangled":"_ZN22DI_AUDIO_STREAM_INFO_tD1Ev *INTERNAL* ","demangled":"DI_AUDIO_STREAM_INFO_t::~DI_AUDIO_STREAM_INFO_t()","location":"f1:93","file":"f1","line":"93","endline":"93","inline":"1"}}
+   - {"$":{"id":"_238","name":"=","returns":"_328","artificial":"1","throw":"","context":"_4","access":"public","mangled":"_ZN22DI_AUDIO_STREAM_INFO_taSERKS_","demangled":"DI_AUDIO_STREAM_INFO_t::operator=(DI_AUDIO_STREAM_INFO_t const&)","location":"f1:93","file":"f1","line":"93","endline":"93","inline":"1"},"Argument":[{"$":{"type":"_329","location":"f1:88","file":"f1","line":"88"}}]}
+   - {"$":{"id":"_239","name":"._7","artificial":"1","throw":"","context":"_4","access":"public","mangled":"_ZN22DI_AUDIO_STREAM_INFO_tC1ERKS_ *INTERNAL* ","demangled":"DI_AUDIO_STREAM_INFO_t::DI_AUDIO_STREAM_INFO_t(DI_AUDIO_STREAM_INFO_t const&)","location":"f1:93","file":"f1","line":"93","endline":"93","inline":"1"},"Argument":[{"$":{"type":"_329","location":"f1:88","file":"f1","line":"88"}}]}
+   - {"$":{"id":"_240","name":"._7","artificial":"1","throw":"","context":"_4","access":"public","mangled":"_ZN22DI_AUDIO_STREAM_INFO_tC1Ev *INTERNAL* ","demangled":"DI_AUDIO_STREAM_INFO_t::DI_AUDIO_STREAM_INFO_t()","location":"f1:93","file":"f1","line":"93","inline":"1"}}
+   - undefined
+DI_AUDIO_Start
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - nType:DI_AUDIO_FORMAT
+   - {"$":{"id":"_66","name":"DI_AUDIO_FORMAT","context":"_1","location":"f1:61","file":"f1","line":"61","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDFORMAT_MPEG","init":"1"}},{"$":{"name":"DI_AUDFORMAT_MP3","init":"2"}},{"$":{"name":"DI_AUDFORMAT_AAC","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_ADTS","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_LOAS","init":"8"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_LOAS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_ADTS","init":"32"}},{"$":{"name":"DI_AUDFORMAT_AC3","init":"64"}},{"$":{"name":"DI_AUDFORMAT_AC3_PLUS","init":"128"}},{"$":{"name":"DI_AUDFORMAT_PCM","init":"256"}},{"$":{"name":"DI_AUDFORMAT_DTS","init":"512"}},{"$":{"name":"DI_AUDFORMAT_LPCM_HD_DVD","init":"1024"}},{"$":{"name":"DI_AUDFORMAT_LPCM_BLUERAY","init":"2048"}},{"$":{"name":"DI_AUDFORMAT_DTS_HD","init":"4096"}},{"$":{"name":"DI_AUDFORMAT_WMA_STD","init":"8192"}},{"$":{"name":"DI_AUDFORMAT_WMA_PRO","init":"16384"}},{"$":{"name":"DI_AUDFORMAT_LPCM_DVD","init":"32768"}},{"$":{"name":"DI_AUDFORMAT_PCMWAVE","init":"65536"}},{"$":{"name":"DI_AUDFORMAT_DRA","init":"131072"}},{"$":{"name":"DI_AUDFORMAT_FLAC","init":"262144"}},{"$":{"name":"DI_AUDFORMAT_ADPCM","init":"524288"}},{"$":{"name":"DI_AUDFORMAT_VORBIS","init":"1048576"}},{"$":{"name":"DI_AUDFORMAT_APE","init":"2097152"}},{"$":{"name":"DI_AUDFORMAT_NONE","init":"0"}}]}
+DI_AUDIO_GetCapability
+ - pucNumOfDevice:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - ppCapInfo:DI_AUDIO_CAP_s
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+   - {"$":{"id":"_114","name":"DI_AUDIO_DECODER_TYPE","context":"_1","location":"f1:75","file":"f1","line":"75","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_DECODER_MAIN","init":"0"}},{"$":{"name":"DI_AUDIO_DECODER_SUB","init":"1"}},{"$":{"name":"DI_AUDIO_DECODER_SPDIF","init":"2"}}]}
+   - {"$":{"id":"_66","name":"DI_AUDIO_FORMAT","context":"_1","location":"f1:61","file":"f1","line":"61","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDFORMAT_MPEG","init":"1"}},{"$":{"name":"DI_AUDFORMAT_MP3","init":"2"}},{"$":{"name":"DI_AUDFORMAT_AAC","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_ADTS","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_LOAS","init":"8"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_LOAS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_ADTS","init":"32"}},{"$":{"name":"DI_AUDFORMAT_AC3","init":"64"}},{"$":{"name":"DI_AUDFORMAT_AC3_PLUS","init":"128"}},{"$":{"name":"DI_AUDFORMAT_PCM","init":"256"}},{"$":{"name":"DI_AUDFORMAT_DTS","init":"512"}},{"$":{"name":"DI_AUDFORMAT_LPCM_HD_DVD","init":"1024"}},{"$":{"name":"DI_AUDFORMAT_LPCM_BLUERAY","init":"2048"}},{"$":{"name":"DI_AUDFORMAT_DTS_HD","init":"4096"}},{"$":{"name":"DI_AUDFORMAT_WMA_STD","init":"8192"}},{"$":{"name":"DI_AUDFORMAT_WMA_PRO","init":"16384"}},{"$":{"name":"DI_AUDFORMAT_LPCM_DVD","init":"32768"}},{"$":{"name":"DI_AUDFORMAT_PCMWAVE","init":"65536"}},{"$":{"name":"DI_AUDFORMAT_DRA","init":"131072"}},{"$":{"name":"DI_AUDFORMAT_FLAC","init":"262144"}},{"$":{"name":"DI_AUDFORMAT_ADPCM","init":"524288"}},{"$":{"name":"DI_AUDFORMAT_VORBIS","init":"1048576"}},{"$":{"name":"DI_AUDFORMAT_APE","init":"2097152"}},{"$":{"name":"DI_AUDFORMAT_NONE","init":"0"}}]}
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+   - {"$":{"id":"_305","name":"DI_AUDIO_CAP_s","artificial":"1","throw":"","context":"_172","access":"public","mangled":"_ZN14DI_AUDIO_CAP_sD1Ev *INTERNAL* ","demangled":"DI_AUDIO_CAP_s::~DI_AUDIO_CAP_s()","location":"f1:96","file":"f1","line":"96","endline":"96","inline":"1"}}
+   - {"$":{"id":"_306","name":"=","returns":"_352","artificial":"1","throw":"","context":"_172","access":"public","mangled":"_ZN14DI_AUDIO_CAP_saSERKS_","demangled":"DI_AUDIO_CAP_s::operator=(DI_AUDIO_CAP_s const&)","location":"f1:96","file":"f1","line":"96","endline":"96","inline":"1"},"Argument":[{"$":{"type":"_353","location":"f1:96","file":"f1","line":"96"}}]}
+   - {"$":{"id":"_307","name":"DI_AUDIO_CAP_s","artificial":"1","throw":"","context":"_172","access":"public","mangled":"_ZN14DI_AUDIO_CAP_sC1ERKS_ *INTERNAL* ","demangled":"DI_AUDIO_CAP_s::DI_AUDIO_CAP_s(DI_AUDIO_CAP_s const&)","location":"f1:96","file":"f1","line":"96","endline":"96","inline":"1"},"Argument":[{"$":{"type":"_353","location":"f1:96","file":"f1","line":"96"}}]}
+   - {"$":{"id":"_308","name":"DI_AUDIO_CAP_s","artificial":"1","throw":"","context":"_172","access":"public","mangled":"_ZN14DI_AUDIO_CAP_sC1Ev *INTERNAL* ","demangled":"DI_AUDIO_CAP_s::DI_AUDIO_CAP_s()","location":"f1:96","file":"f1","line":"96","inline":"1"}}
+   - undefined
+DI_AUDIO_StartPrimer
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - pPrimerSetting:DI_AUDIO_PRIMER_t
+   - {"$":{"id":"_65","name":"DI_AUDIO_TYPE","context":"_1","location":"f1:32","file":"f1","line":"32","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIOTYPE_STREAM","init":"0"}},{"$":{"name":"DI_AUDIOTYPE_MEDIA","init":"1"}},{"$":{"name":"DI_AUDIOTYPE_PLAYBACK","init":"2"}},{"$":{"name":"DI_AUDIOTYOE_MAX","init":"3"}}]}
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+   - {"$":{"id":"_66","name":"DI_AUDIO_FORMAT","context":"_1","location":"f1:61","file":"f1","line":"61","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDFORMAT_MPEG","init":"1"}},{"$":{"name":"DI_AUDFORMAT_MP3","init":"2"}},{"$":{"name":"DI_AUDFORMAT_AAC","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_ADTS","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_LOAS","init":"8"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_LOAS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_ADTS","init":"32"}},{"$":{"name":"DI_AUDFORMAT_AC3","init":"64"}},{"$":{"name":"DI_AUDFORMAT_AC3_PLUS","init":"128"}},{"$":{"name":"DI_AUDFORMAT_PCM","init":"256"}},{"$":{"name":"DI_AUDFORMAT_DTS","init":"512"}},{"$":{"name":"DI_AUDFORMAT_LPCM_HD_DVD","init":"1024"}},{"$":{"name":"DI_AUDFORMAT_LPCM_BLUERAY","init":"2048"}},{"$":{"name":"DI_AUDFORMAT_DTS_HD","init":"4096"}},{"$":{"name":"DI_AUDFORMAT_WMA_STD","init":"8192"}},{"$":{"name":"DI_AUDFORMAT_WMA_PRO","init":"16384"}},{"$":{"name":"DI_AUDFORMAT_LPCM_DVD","init":"32768"}},{"$":{"name":"DI_AUDFORMAT_PCMWAVE","init":"65536"}},{"$":{"name":"DI_AUDFORMAT_DRA","init":"131072"}},{"$":{"name":"DI_AUDFORMAT_FLAC","init":"262144"}},{"$":{"name":"DI_AUDFORMAT_ADPCM","init":"524288"}},{"$":{"name":"DI_AUDFORMAT_VORBIS","init":"1048576"}},{"$":{"name":"DI_AUDFORMAT_APE","init":"2097152"}},{"$":{"name":"DI_AUDFORMAT_NONE","init":"0"}}]}
+   - {"$":{"id":"_323","name":"._23","artificial":"1","throw":"","context":"_205","access":"public","mangled":"_ZN17DI_AUDIO_PRIMER_tD1Ev *INTERNAL* ","demangled":"DI_AUDIO_PRIMER_t::~DI_AUDIO_PRIMER_t()","location":"f1:282","file":"f1","line":"282","endline":"282","inline":"1"}}
+   - {"$":{"id":"_324","name":"=","returns":"_356","artificial":"1","throw":"","context":"_205","access":"public","mangled":"_ZN17DI_AUDIO_PRIMER_taSERKS_","demangled":"DI_AUDIO_PRIMER_t::operator=(DI_AUDIO_PRIMER_t const&)","location":"f1:282","file":"f1","line":"282","endline":"282","inline":"1"},"Argument":[{"$":{"type":"_357","location":"f1:278","file":"f1","line":"278"}}]}
+   - {"$":{"id":"_325","name":"._23","artificial":"1","throw":"","context":"_205","access":"public","mangled":"_ZN17DI_AUDIO_PRIMER_tC1ERKS_ *INTERNAL* ","demangled":"DI_AUDIO_PRIMER_t::DI_AUDIO_PRIMER_t(DI_AUDIO_PRIMER_t const&)","location":"f1:282","file":"f1","line":"282","endline":"282","inline":"1"},"Argument":[{"$":{"type":"_357","location":"f1:278","file":"f1","line":"278"}}]}
+   - {"$":{"id":"_326","name":"._23","artificial":"1","throw":"","context":"_205","access":"public","mangled":"_ZN17DI_AUDIO_PRIMER_tC1Ev *INTERNAL* ","demangled":"DI_AUDIO_PRIMER_t::DI_AUDIO_PRIMER_t()","location":"f1:282","file":"f1","line":"282","inline":"1"}}
+   - undefined
+DI_AUDIO_GetState
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - pnAudioState:DI_AUDIO_RUNNING_STATE
+   - {"$":{"id":"_150","name":"DI_AUDIO_RUNNING_STATE","context":"_1","location":"f1:127","file":"f1","line":"127","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_STATE_UNKNOWN","init":"0"}},{"$":{"name":"DI_AUDIO_STATE_DECODING","init":"1"}},{"$":{"name":"DI_AUDIO_STATE_NODATA","init":"2"}}]}
+DI_AUDIO_GetOutputNum
+ - eType:DI_AUDIO_OUTPUT
+   - {"$":{"id":"_200","name":"DI_AUDIO_OUTPUT","context":"_1","location":"f1:196","file":"f1","line":"196","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_OUTPUT_ALL","init":"0"}},{"$":{"name":"DI_AUDIO_OUTPUT_DAC","init":"1"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPDIF","init":"2"}},{"$":{"name":"DI_AUDIO_OUTPUT_HDMI","init":"4"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPEAKER","init":"8"}},{"$":{"name":"DI_AUDIO_OUTPUT_HP","init":"16"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_1","init":"32"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_2","init":"64"}},{"$":{"name":"DI_AUDIO_OUTPUT_I2S","init":"128"}}]}
+ - ucNum:unsigned char
+   - {"$":{"id":"_35","name":"unsigned char","size":"8","align":"8"}}
+DI_AUDIO_PauseMemoryStream
+ - ulRequestId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - pause:int
+   - {"$":{"id":"_86","name":"int","size":"32","align":"32"}}
+DI_AUDIO_SetSpdifOutput
+ - mode:DI_AUDIO_SPDIF_MODE
+   - {"$":{"id":"_199","name":"DI_AUDIO_SPDIF_MODE","context":"_1","location":"f1:147","file":"f1","line":"147","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDOUT_SPDIF_DOWNMIX","init":"0"}},{"$":{"name":"DI_AUDOUT_SPDIF_BYPASS","init":"1"}},{"$":{"name":"DI_AUDOUT_SPDIF_TRANSCODING","init":"2"}}]}
+DI_AUDIO_SetMute
+ - eOutput:DI_AUDIO_OUTPUT
+   - {"$":{"id":"_200","name":"DI_AUDIO_OUTPUT","context":"_1","location":"f1:196","file":"f1","line":"196","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_OUTPUT_ALL","init":"0"}},{"$":{"name":"DI_AUDIO_OUTPUT_DAC","init":"1"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPDIF","init":"2"}},{"$":{"name":"DI_AUDIO_OUTPUT_HDMI","init":"4"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPEAKER","init":"8"}},{"$":{"name":"DI_AUDIO_OUTPUT_HP","init":"16"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_1","init":"32"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_2","init":"64"}},{"$":{"name":"DI_AUDIO_OUTPUT_I2S","init":"128"}}]}
+ - mute:int
+   - {"$":{"id":"_86","name":"int","size":"32","align":"32"}}
+DI_AUDIO_SetHraOutput
+ - bSetPath:int
+   - {"$":{"id":"_86","name":"int","size":"32","align":"32"}}
+DI_AUDIO_SetDecoderVolume
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - ulDecoderVolume:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+DI_AUDIO_RegisterEventCallback
+ - uDeviceId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - nEvent:DI_AUDIO_NOTIFY_EVT
+   - {"$":{"id":"_74","name":"DI_AUDIO_NOTIFY_EVT","context":"_1","location":"f1:119","file":"f1","line":"119","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_RUNNING_STATE_CHANGED","init":"0"}},{"$":{"name":"DI_AUDIO_FORMAT_CHANGED","init":"1"}},{"$":{"name":"DI_AUDIO_MEMORY_STREAM_STARTED","init":"2"}},{"$":{"name":"DI_AUDIO_MEMORY_STREAM_COMPLETED","init":"3"}},{"$":{"name":"DI_AUDIO_SIF_MODE_CHANGED","init":"4"}},{"$":{"name":"DI_AUDIO_HEADPHONE_CONNECTION","init":"5"}},{"$":{"name":"DI_AUDIO_DATAEMPTY","init":"6"}},{"$":{"name":"DI_AUDIO_DATAFLOW","init":"7"}},{"$":{"name":"DI_AUDIO_ERRORS_OCCURED","init":"8"}},{"$":{"name":"DI_AUDIO_EVENT_NOTIFY_END","init":"9"}}]}
+ - pfnCallback:undefined
+   - {"$":{"id":"_298","returns":"_265"},"Argument":[{"$":{"type":"_266"}}]}
+ - ulCallerId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+DI_AUDIO_StartMemoryStream
+ - ulRequestId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - dType:DI_AUDIO_FORMAT
+   - {"$":{"id":"_66","name":"DI_AUDIO_FORMAT","context":"_1","location":"f1:61","file":"f1","line":"61","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDFORMAT_MPEG","init":"1"}},{"$":{"name":"DI_AUDFORMAT_MP3","init":"2"}},{"$":{"name":"DI_AUDFORMAT_AAC","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_ADTS","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_LOAS","init":"8"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_LOAS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_ADTS","init":"32"}},{"$":{"name":"DI_AUDFORMAT_AC3","init":"64"}},{"$":{"name":"DI_AUDFORMAT_AC3_PLUS","init":"128"}},{"$":{"name":"DI_AUDFORMAT_PCM","init":"256"}},{"$":{"name":"DI_AUDFORMAT_DTS","init":"512"}},{"$":{"name":"DI_AUDFORMAT_LPCM_HD_DVD","init":"1024"}},{"$":{"name":"DI_AUDFORMAT_LPCM_BLUERAY","init":"2048"}},{"$":{"name":"DI_AUDFORMAT_DTS_HD","init":"4096"}},{"$":{"name":"DI_AUDFORMAT_WMA_STD","init":"8192"}},{"$":{"name":"DI_AUDFORMAT_WMA_PRO","init":"16384"}},{"$":{"name":"DI_AUDFORMAT_LPCM_DVD","init":"32768"}},{"$":{"name":"DI_AUDFORMAT_PCMWAVE","init":"65536"}},{"$":{"name":"DI_AUDFORMAT_DRA","init":"131072"}},{"$":{"name":"DI_AUDFORMAT_FLAC","init":"262144"}},{"$":{"name":"DI_AUDFORMAT_ADPCM","init":"524288"}},{"$":{"name":"DI_AUDFORMAT_VORBIS","init":"1048576"}},{"$":{"name":"DI_AUDFORMAT_APE","init":"2097152"}},{"$":{"name":"DI_AUDFORMAT_NONE","init":"0"}}]}
+ - dMemBuf:void
+   - {"$":{"id":"_265","name":"void","align":"8"}}
+ - dMemBufSize:long unsigned int
+   - {"$":{"id":"_111","name":"long unsigned int","size":"32","align":"32"}}
+ - dLoopCount:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - output:DI_AUDIO_OUTPUT
+   - {"$":{"id":"_200","name":"DI_AUDIO_OUTPUT","context":"_1","location":"f1:196","file":"f1","line":"196","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_OUTPUT_ALL","init":"0"}},{"$":{"name":"DI_AUDIO_OUTPUT_DAC","init":"1"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPDIF","init":"2"}},{"$":{"name":"DI_AUDIO_OUTPUT_HDMI","init":"4"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPEAKER","init":"8"}},{"$":{"name":"DI_AUDIO_OUTPUT_HP","init":"16"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_1","init":"32"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_2","init":"64"}},{"$":{"name":"DI_AUDIO_OUTPUT_I2S","init":"128"}}]}
+DI_AUDIO_SetSync
+ - bOnOff:int
+   - {"$":{"id":"_86","name":"int","size":"32","align":"32"}}
+DI_AUDIO_SelectPrimer
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - ulPrimerIndex:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+DI_AUDIO_SetSCMS
+ - mode:DI_AUDIO_COPYRIGHT_MODE
+   - {"$":{"id":"_151","name":"DI_AUDIO_COPYRIGHT_MODE","context":"_1","location":"f1:162","file":"f1","line":"162","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDOUT_COPYRIGHT_NO_RESTRICTION","init":"0"}},{"$":{"name":"DI_AUDOUT_COPYRIGHT_ONE_COPY","init":"1"}},{"$":{"name":"DI_AUDOUT_COPYRIGHT_NO_COPY","init":"2"}}]}
+DI_AUDIO_StopPrimer
+ - ulDevId:unsigned int
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+ - pPrimerSetting:DI_AUDIO_PRIMER_t
+   - {"$":{"id":"_65","name":"DI_AUDIO_TYPE","context":"_1","location":"f1:32","file":"f1","line":"32","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIOTYPE_STREAM","init":"0"}},{"$":{"name":"DI_AUDIOTYPE_MEDIA","init":"1"}},{"$":{"name":"DI_AUDIOTYPE_PLAYBACK","init":"2"}},{"$":{"name":"DI_AUDIOTYOE_MAX","init":"3"}}]}
+   - {"$":{"id":"_92","name":"unsigned int","size":"32","align":"32"}}
+   - {"$":{"id":"_66","name":"DI_AUDIO_FORMAT","context":"_1","location":"f1:61","file":"f1","line":"61","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDFORMAT_MPEG","init":"1"}},{"$":{"name":"DI_AUDFORMAT_MP3","init":"2"}},{"$":{"name":"DI_AUDFORMAT_AAC","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_ADTS","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_LOAS","init":"8"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_LOAS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_ADTS","init":"32"}},{"$":{"name":"DI_AUDFORMAT_AC3","init":"64"}},{"$":{"name":"DI_AUDFORMAT_AC3_PLUS","init":"128"}},{"$":{"name":"DI_AUDFORMAT_PCM","init":"256"}},{"$":{"name":"DI_AUDFORMAT_DTS","init":"512"}},{"$":{"name":"DI_AUDFORMAT_LPCM_HD_DVD","init":"1024"}},{"$":{"name":"DI_AUDFORMAT_LPCM_BLUERAY","init":"2048"}},{"$":{"name":"DI_AUDFORMAT_DTS_HD","init":"4096"}},{"$":{"name":"DI_AUDFORMAT_WMA_STD","init":"8192"}},{"$":{"name":"DI_AUDFORMAT_WMA_PRO","init":"16384"}},{"$":{"name":"DI_AUDFORMAT_LPCM_DVD","init":"32768"}},{"$":{"name":"DI_AUDFORMAT_PCMWAVE","init":"65536"}},{"$":{"name":"DI_AUDFORMAT_DRA","init":"131072"}},{"$":{"name":"DI_AUDFORMAT_FLAC","init":"262144"}},{"$":{"name":"DI_AUDFORMAT_ADPCM","init":"524288"}},{"$":{"name":"DI_AUDFORMAT_VORBIS","init":"1048576"}},{"$":{"name":"DI_AUDFORMAT_APE","init":"2097152"}},{"$":{"name":"DI_AUDFORMAT_NONE","init":"0"}}]}
+   - {"$":{"id":"_323","name":"._23","artificial":"1","throw":"","context":"_205","access":"public","mangled":"_ZN17DI_AUDIO_PRIMER_tD1Ev *INTERNAL* ","demangled":"DI_AUDIO_PRIMER_t::~DI_AUDIO_PRIMER_t()","location":"f1:282","file":"f1","line":"282","endline":"282","inline":"1"}}
+   - {"$":{"id":"_324","name":"=","returns":"_356","artificial":"1","throw":"","context":"_205","access":"public","mangled":"_ZN17DI_AUDIO_PRIMER_taSERKS_","demangled":"DI_AUDIO_PRIMER_t::operator=(DI_AUDIO_PRIMER_t const&)","location":"f1:282","file":"f1","line":"282","endline":"282","inline":"1"},"Argument":[{"$":{"type":"_357","location":"f1:278","file":"f1","line":"278"}}]}
+   - {"$":{"id":"_325","name":"._23","artificial":"1","throw":"","context":"_205","access":"public","mangled":"_ZN17DI_AUDIO_PRIMER_tC1ERKS_ *INTERNAL* ","demangled":"DI_AUDIO_PRIMER_t::DI_AUDIO_PRIMER_t(DI_AUDIO_PRIMER_t const&)","location":"f1:282","file":"f1","line":"282","endline":"282","inline":"1"},"Argument":[{"$":{"type":"_357","location":"f1:278","file":"f1","line":"278"}}]}
+   - {"$":{"id":"_326","name":"._23","artificial":"1","throw":"","context":"_205","access":"public","mangled":"_ZN17DI_AUDIO_PRIMER_tC1Ev *INTERNAL* ","demangled":"DI_AUDIO_PRIMER_t::DI_AUDIO_PRIMER_t()","location":"f1:282","file":"f1","line":"282","inline":"1"}}
+   - undefined
+DI_AUDIO_SetTranscoding
+ - eOutputType:DI_AUDIO_OUTPUT
+   - {"$":{"id":"_200","name":"DI_AUDIO_OUTPUT","context":"_1","location":"f1:196","file":"f1","line":"196","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDIO_OUTPUT_ALL","init":"0"}},{"$":{"name":"DI_AUDIO_OUTPUT_DAC","init":"1"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPDIF","init":"2"}},{"$":{"name":"DI_AUDIO_OUTPUT_HDMI","init":"4"}},{"$":{"name":"DI_AUDIO_OUTPUT_SPEAKER","init":"8"}},{"$":{"name":"DI_AUDIO_OUTPUT_HP","init":"16"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_1","init":"32"}},{"$":{"name":"DI_AUDIO_OUTPUT_SCART_2","init":"64"}},{"$":{"name":"DI_AUDIO_OUTPUT_I2S","init":"128"}}]}
+ - OnOff:int
+   - {"$":{"id":"_86","name":"int","size":"32","align":"32"}}
+ - outType:DI_AUDIO_FORMAT
+   - {"$":{"id":"_66","name":"DI_AUDIO_FORMAT","context":"_1","location":"f1:61","file":"f1","line":"61","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDFORMAT_MPEG","init":"1"}},{"$":{"name":"DI_AUDFORMAT_MP3","init":"2"}},{"$":{"name":"DI_AUDFORMAT_AAC","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_ADTS","init":"4"}},{"$":{"name":"DI_AUDFORMAT_AAC_LOAS","init":"8"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_LOAS","init":"16"}},{"$":{"name":"DI_AUDFORMAT_AAC_PLUS_ADTS","init":"32"}},{"$":{"name":"DI_AUDFORMAT_AC3","init":"64"}},{"$":{"name":"DI_AUDFORMAT_AC3_PLUS","init":"128"}},{"$":{"name":"DI_AUDFORMAT_PCM","init":"256"}},{"$":{"name":"DI_AUDFORMAT_DTS","init":"512"}},{"$":{"name":"DI_AUDFORMAT_LPCM_HD_DVD","init":"1024"}},{"$":{"name":"DI_AUDFORMAT_LPCM_BLUERAY","init":"2048"}},{"$":{"name":"DI_AUDFORMAT_DTS_HD","init":"4096"}},{"$":{"name":"DI_AUDFORMAT_WMA_STD","init":"8192"}},{"$":{"name":"DI_AUDFORMAT_WMA_PRO","init":"16384"}},{"$":{"name":"DI_AUDFORMAT_LPCM_DVD","init":"32768"}},{"$":{"name":"DI_AUDFORMAT_PCMWAVE","init":"65536"}},{"$":{"name":"DI_AUDFORMAT_DRA","init":"131072"}},{"$":{"name":"DI_AUDFORMAT_FLAC","init":"262144"}},{"$":{"name":"DI_AUDFORMAT_ADPCM","init":"524288"}},{"$":{"name":"DI_AUDFORMAT_VORBIS","init":"1048576"}},{"$":{"name":"DI_AUDFORMAT_APE","init":"2097152"}},{"$":{"name":"DI_AUDFORMAT_NONE","init":"0"}}]}
+DI_AUDIO_SetHdmiOutput
+ - mode:DI_AUDIO_HDMI_MODE
+   - {"$":{"id":"_55","name":"DI_AUDIO_HDMI_MODE","context":"_1","location":"f1:154","file":"f1","line":"154","size":"32","align":"32"},"EnumValue":[{"$":{"name":"DI_AUDOUT_HDMI_DOWNMIX","init":"0"}},{"$":{"name":"DI_AUDOUT_HDMI_BYPASS","init":"1"}},{"$":{"name":"DI_AUDOUT_HDMI_TRANSCODING","init":"2"}}]}
+
+Process finished with exit code 0
